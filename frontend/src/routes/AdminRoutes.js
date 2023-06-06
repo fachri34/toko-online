@@ -1,10 +1,10 @@
-import AdminDashboardPage from "../pages/admin/AdminDashboardPage";
-import AdminDashboardUsers from "../pages/admin/AdminDashboardUsers";
-import AdminDashboardSellers from "../pages/admin/AdminDashboardSellers";
-import AdminDashboardOrders from "../pages/admin/AdminDashboardOrders";
-import AdminDashboardProducts from "../pages/admin/AdminDashboardProducts";
-import AdminDashboardEvents from "../pages/admin/AdminDashboardEvents";
-import AdminDashboardWithdraw from "../pages/admin/AdminDashboardWithdraw";
+import AdminDashboardPage from "../pages/Admin/AdminDashboardPage";
+import AdminDashboardUsers from "../pages/Admin/AdminDashboardUsers";
+import AdminDashboardSellers from "../pages/Admin/AdminDashboardSellers";
+import AdminDashboardOrders from "../pages/Admin/AdminDashboardOrders";
+import AdminDashboardProducts from "../pages/Admin/AdminDashboardProducts";
+import AdminDashboardEvents from "../pages/Admin/AdminDashboardEvents";
+import AdminDashboardWithdraw from "../pages/Admin/AdminDashboardWithdraw";
 
 export {
   AdminDashboardPage,

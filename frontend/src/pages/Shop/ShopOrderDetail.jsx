@@ -1,7 +1,7 @@
 import React from 'react'
-import DashboardHeader from '../../components/Shop/Layout/DashboardHeader'
+import DashboardHeader from '../../components/Layout/DashboardHeader'
 import Footer from '../../components/Layout/Footer'
-import OrderDetails from "../../components/Shop/OrderDetails";
+import OrderDetails from "../../components/Shop/OrderDetail";
 
 const ShopOrderDetails = () => {
   return (

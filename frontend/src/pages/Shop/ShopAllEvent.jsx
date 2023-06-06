@@ -1,6 +1,6 @@
 import React from 'react'
-import DashboardHeader from '../../components/Shop/Layout/DashboardHeader'
-import DashboardSideBar from '../../components/Shop/Layout/DashboardSidebar'
+import DashboardHeader from '../../components/Layout/DashboardHeader'
+import DashboardSideBar from '../../components/Layout/DashboardSidebar'
 import AllEvent from "../../components/Shop/AllEvent";
 
 const ShopAllEvents = () => {

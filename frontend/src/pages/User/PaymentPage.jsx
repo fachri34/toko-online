@@ -1,8 +1,8 @@
 import React from 'react'
-import CheckoutSteps from '../../components/Checkout/CheckoutSteps'
+import CheckoutSteps from '../../components/User/Checkout/CheckoutSteps'
 import Footer from '../../components/Layout/Footer'
 import Header from '../../components/Layout/Header'
-import Payment from "../../components/Payment/Payment.jsx";
+import Payment from "../../components/User/Payment/Payment";
 
 const PaymentPage = () => {
   return (

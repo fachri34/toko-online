@@ -1,7 +1,7 @@
 import React from 'react'
-import DashboardHeader from '../../components/Shop/Layout/DashboardHeader'
-import DashboardSidebar from '../../components/Shop/Layout/DashboardSidebar'
-import CreateProduct from "../../components/Shop/CreateProduct.jsx"
+import DashboardHeader from '../../components/Layout/DashboardHeader'
+import DashboardSidebar from '../../components/Layout/DashboardSidebar'
+import CreateProduct from "../../components/Shop/CreateProduct"
 
 const ShopCreateProduct = () => {
   return (

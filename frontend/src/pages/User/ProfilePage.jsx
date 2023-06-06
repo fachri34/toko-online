@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Header from "../../components/Layout/Header";
 import styles from "../../styles/styles";
-import ProfileSideBar from "../../components/Profile/ProfileSidebar";
-import ProfileContent from "../../components/Profile/ProfileContent";
+import ProfileSideBar from "../../components/User/Profile/ProfileSidebar";
+import ProfileContent from "../../components/User/Profile/ProfileContent";
 import { useSelector } from "react-redux";
 import Loader from "../../components/Layout/Loader"
 

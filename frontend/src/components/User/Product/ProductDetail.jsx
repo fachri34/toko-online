@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import {AiFillHeart, AiOutlineHeart, AiOutlineMessage, AiOutlineShoppingCart } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import { getAllProductsShop } from "../../redux/actions/product";
-import { api, url } from "../../Api"
-import styles from "../../styles/styles";
-import { addToWishlist, removeFromWishlist } from "../../redux/actions/wishlist";
-import { addTocart } from "../../redux/actions/cart";
+import { getAllProductsShop } from "../../../redux/actions/product";
+import { api, url } from "../../../Api"
+import styles from "../../../styles/styles";
+import { addToWishlist, removeFromWishlist } from "../../../redux/actions/wishlist";
+import { addTocart } from "../../../redux/actions/cart";
 import { toast } from "react-toastify";
 import Ratings from "./Ratings";
 import axios from "axios";

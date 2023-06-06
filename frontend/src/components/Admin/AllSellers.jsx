@@ -8,7 +8,7 @@ import { RxCross1 } from "react-icons/rx";
 import axios from "axios";
 import { url } from "../../Api";
 import { toast } from "react-toastify";
-import { getAllSellers } from "../../redux/actions/sellers";
+import { getAllSellers } from "../../redux/actions/seller";
 import { Link } from "react-router-dom";
 
 const AllSellers = () => {

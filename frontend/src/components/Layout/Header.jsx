@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from '../../styles/styles'
 import { Link } from 'react-router-dom'
-import { productData, categoriesData } from '../../static/data'
+import { categoriesData } from '../../static/data'
 import { AiOutlineSearch, AiOutlineHeart, AiOutlineShoppingCart } from 'react-icons/ai'
 import { IoIosArrowForward, IoIosArrowDown } from 'react-icons/io'
 import { BiMenuAltLeft } from 'react-icons/bi'
@@ -10,8 +10,8 @@ import DropDown from './DropDown'
 import Navbar from './Navbar'
 import { useSelector } from 'react-redux'
 import { api } from '../../Api'
-import Cart from "../Cart/Cart"
-import Wishlist from "../Wishlist/Wishlist"
+import Cart from "../User/Cart/Cart"
+import Wishlist from "../User/Wishlist/Wishlist"
 import { RxCross1 } from "react-icons/rx";
 
 const Header = ({ activeHeading }) => {

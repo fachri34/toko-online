@@ -12,9 +12,15 @@ import ShopAllRefunds from "../pages/Shop/ShopAllRefund";
 import ShopSettingsPage from "../pages/Shop/ShopSettingPage";
 import ShopWithDrawMoneyPage from "../pages/Shop/ShopWithdrawMoneyPage";
 import ShopInboxPage from "../pages/Shop/ShopInboxPage"
+import ShopCreatePage from '../pages/Shop/ShopCreatePage'
+import SellerActivationPage from '../pages/Shop/SellerActivationPage'
+import ShopLoginPage from '../pages/Shop/ShopLoginPage'
 
 
 export {
+    ShopCreatePage,
+    SellerActivationPage,
+    ShopLoginPage,
     ShopHomePage,
     ShopDashboardPage,
     ShopCreateProduct,

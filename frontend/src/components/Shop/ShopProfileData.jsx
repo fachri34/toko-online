@@ -3,9 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import { getAllProductsShop } from "../../redux/actions/product";
 import styles from "../../styles/styles";
-import ProductCard from "../Route/ProductCard/ProductCard";
+import ProductCard from "../User/Home/ProductCard/ProductCard";
 import { api } from '../../Api'
-import Ratings from "../Products/Ratings";
+import Ratings from "../User/Product/Ratings";
 import { getAllEventsShop } from "../../redux/actions/event";
 
 const ShopProfileData = ({ isOwner }) => {

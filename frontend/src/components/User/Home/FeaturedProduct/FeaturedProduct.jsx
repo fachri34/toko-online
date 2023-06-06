@@ -1,10 +1,11 @@
 import React from 'react'
-import styles from '../../../styles/styles'
+import styles from '../../../../styles/styles'
 import { useSelector } from "react-redux";
 import ProductCard from '../ProductCard/ProductCard'
 
 const FeaturedProduct = () => {
     const { allProducts } = useSelector((state) => state.product)
+    
     return (
         <div>
             <div className={`${styles.section}`}>

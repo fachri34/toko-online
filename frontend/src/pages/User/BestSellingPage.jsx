@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom'
 import { productData } from '../../static/data'
 import Header from '../../components/Layout/Header'
 import styles from '../../styles/styles'
-import ProductCard from '../../components/Route/ProductCard/ProductCard'
+import ProductCard from '../../components/User/Home/ProductCard/ProductCard'
 
 const BestSellingPage = () => {
     const [searchParams] = useSearchParams()

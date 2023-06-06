@@ -1,13 +1,13 @@
 import React from 'react'
 import Header from '../../components/Layout/Header'
 import Footer from '../../components/Layout/Footer'
-import UserOrderDetails from "../components/UserOrderDetails";
+import OrderDetails from "../../components/User/Order/OrderDetail";
 
 const OrderDetailsPage = () => {
   return (
     <div>
         <Header />
-        <UserOrderDetails />
+        <OrderDetails />
         <Footer />
     </div>
   )

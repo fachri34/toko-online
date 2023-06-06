@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Header from '../../components/Layout/Header'
 import Footer from '../../components/Layout/Footer'
-import ProductDetail from '../../components/Product/ProductDetail'
+import ProductDetail from '../../components/User/Product/ProductDetail'
 import { useParams,  useSearchParams } from 'react-router-dom'
-import SuggestedProduct from "../../components/Product/SuggestedProduct.jsx"
+import SuggestedProduct from "../../components/User/Product/SuggestedProduct"
 import { useSelector } from 'react-redux'
 
 const ProductDetailPage = () => {

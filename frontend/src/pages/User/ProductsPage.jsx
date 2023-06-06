@@ -6,7 +6,7 @@ import styles from '../../styles/styles'
 import { useSelector } from 'react-redux'
 import Loader from "../../components/Layout/Loader";
 import Footer from "../../components/Layout/Footer";
-import ProductCard from '../../components/Route/ProductCard/ProductCard'
+import ProductCard from '../../components/User/Home/ProductCard/ProductCard'
 
 const ProductsPage = () => {
     const [searchParams] = useSearchParams()

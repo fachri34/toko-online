@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Login from '../../components/Login/Login'
+import Login from '../../components/User/Login/Login'
 import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 

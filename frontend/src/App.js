@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { LoginPage, RegisterPage, ActivationPage, HomePage, FAQPage, ProductsPage, BestSellingPage, EventsPage, ProductDetailPage, ProfilePage, ShopCreatePage, SellerActivationPage, ShopLoginPage, CheckoutPage, PaymentPage, OrderSuccessPage, OrderDetailsPage, TrackOrderPage, UserInbox } from './routes/Routes.js'
-import { ShopHomePage, ShopDashboardPage, ShopCreateProduct, ShopAllProduct, ShopCreateEvent, ShopAllEvent, ShopAllCoupouns, ShopPreviewPage, ShopAllOrders, ShopOrderDetails, ShopAllRefunds, ShopSettingsPage, ShopWithDrawMoneyPage, ShopInboxPage } from "./routes/ShopRoute"
+import { LoginPage, RegisterPage, ActivationPage, HomePage, FAQPage, ProductsPage, BestSellingPage, EventsPage, ProductDetailPage, ProfilePage, CheckoutPage, PaymentPage, OrderSuccessPage, OrderDetailsPage, TrackOrderPage, UserInbox } from './routes/Routes.js'
+import { ShopHomePage, ShopDashboardPage, ShopCreateProduct, ShopAllProduct, ShopCreateEvent, ShopAllEvent, ShopAllCoupouns, ShopPreviewPage, ShopAllOrders, ShopOrderDetails, ShopAllRefunds, ShopSettingsPage, ShopWithDrawMoneyPage, ShopInboxPage,  ShopCreatePage, SellerActivationPage, ShopLoginPage } from "./routes/ShopRoute"
 import { AdminDashboardPage, AdminDashboardUsers, AdminDashboardSellers, AdminDashboardOrders, AdminDashboardProducts, AdminDashboardEvents, AdminDashboardWithdraw }from "./routes/AdminRoutes"
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -10,7 +10,7 @@ import Store from './redux/store.js';
 import { loadUser, loadSeller } from './redux/actions/user';
 import ProtectedRoute from "./routes/ProtectedRoute.js";
 import SellerProtectedRoute from "./routes/sellerProtectedRoute.js";
-import ProtectedAdminRoute from "./routes/ProtectedAdminRoute"
+import ProtectedAdminRoute from "./routes/ProtectedAdminRoute.js"
 import { getAllProducts } from './redux/actions/product'
 import { getAllEvents } from './redux/actions/event'
 import { url } from "./Api";

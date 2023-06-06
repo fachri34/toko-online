@@ -1,6 +1,6 @@
 import React from 'react'
-import DashboardHeader from '../../components/Shop/Layout/DashboardHeader'
-import DashboardSidebar from '../../components/Shop/Layout/DashboardSidebar'
+import DashboardHeader from '../../components/Layout/DashboardHeader'
+import DashboardSidebar from '../../components/Layout/DashboardSidebar'
 import AllProduct from '../../components/Shop/AllProduct'
 
 const ShopAllProduct = () => {

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import styles from "../../../styles/styles";
+import styles from "../../../../styles/styles";
 import ProductDetailsCard from "../ProductDetailsCard/ProductDetailsCard"
 import { AiFillHeart, AiFillStar, AiOutlineEye, AiOutlineHeart, AiOutlineShoppingCart, AiOutlineStar } from "react-icons/ai";
-import { api } from "../../../Api";
+import { api } from "../../../../Api";
 import { useDispatch, useSelector } from 'react-redux'
-import { addToWishlist, removeFromWishlist } from '../../../redux/actions/wishlist'
-import { addTocart } from '../../../redux/actions/cart'
+import { addToWishlist, removeFromWishlist } from '../../../../redux/actions/wishlist'
+import { addTocart } from '../../../../redux/actions/cart'
 import { toast } from 'react-toastify'
 import Ratings from "../../Product/Ratings"
 

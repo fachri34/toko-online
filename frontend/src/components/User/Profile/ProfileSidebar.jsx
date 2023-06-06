@@ -7,7 +7,7 @@ import { TbAddressBook } from "react-icons/tb";
 import { RxPerson } from "react-icons/rx";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import { url } from "../../Api";
+import { url } from "../../../Api";
 import { toast } from "react-toastify";
 import { useSelector } from "react-redux";
 
