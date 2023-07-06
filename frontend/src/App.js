@@ -31,6 +31,7 @@ const App = () => {
     Store.dispatch(loadSeller())
     Store.dispatch(getAllProducts());
     Store.dispatch(getAllEvents());
+    getStripeApikey();
   }, [])
 
   return (
@@ -71,7 +72,7 @@ const App = () => {
 
             }
           />
-          <Route path="/order/success/" element={<OrderSuccessPage />} />
+          <Route path="/order/success" element={<OrderSuccessPage />} />
           <Route
             path="/profile"
             element={

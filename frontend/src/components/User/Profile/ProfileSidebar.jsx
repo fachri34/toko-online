@@ -2,7 +2,7 @@ import React from "react";
 import { AiOutlineLogin, AiOutlineMessage } from "react-icons/ai";
 import {RiLockPasswordLine} from "react-icons/ri"
 import { HiOutlineReceiptRefund, HiOutlineShoppingBag } from "react-icons/hi";
-import { MdOutlineTrackChanges, MdOutlineAdminPanelSettings, MdOutlinePassword} from "react-icons/md";
+import { MdOutlineTrackChanges, MdOutlineAdminPanelSettings} from "react-icons/md";
 import { TbAddressBook } from "react-icons/tb";
 import { RxPerson } from "react-icons/rx";
 import { Link, useNavigate } from "react-router-dom";

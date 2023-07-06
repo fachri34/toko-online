@@ -13,7 +13,7 @@ const event = require('./controller/event')
 const couponCode = require('./controller/couponCode')
 const conversation = require('./controller/conversation')
 const order = require('./controller/order')
-// const payment = require('./controller/payment')
+const payment = require('./controller/payment')
 const message= require('./controller/message')
 const withdraw= require('./controller/withdraw')
 
@@ -49,7 +49,7 @@ app.use('/api/v2/conversation', conversation)
 app.use('/api/v2/order', order)
 app.use('/api/v2/message', message)
 app.use('/api/v2/withdraw', withdraw)
-// app.use('/api/v2/payment', payment)
+app.use('/api/v2/payment', payment)
 
 app.listen(port, () => {
     console.log(`Server Running on port:`,port)

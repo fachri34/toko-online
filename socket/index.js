@@ -5,10 +5,10 @@ const cors = require("cors");
 const app = express();
 const server = http.createServer(app);
 const io = socketIO(server);
-dotenv.config()
 
-const port = process.env.PORT
-
+require("dotenv").config({
+  path: "./.env",
+});
 app.use(cors());
 app.use(express.json());
 
@@ -107,6 +107,6 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(port, () => {
-  console.log(`server is running on port`, port);
+server.listen(process.env.PORT, () => {
+  console.log(`server is running on port`, process.env.PORT);
 })

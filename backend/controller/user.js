@@ -36,8 +36,8 @@ router.post("/register", upload.single("file"), async (req, res, next) => {
       email: email,
       password: password,
       avatar: fileUrl,
-    };
-
+    }
+    
     const activationToken = createActivationToken(user);
 
     const activationUrl = `http://localhost:3000/activation/${activationToken}`;
@@ -235,7 +235,7 @@ router.put("/update-user-addresses", isAuthenticated, catchAsyncErrors(async (re
     try {
       const user = await User.findById(req.user.id);
 
-      const sameTypeAddress = user.addresses.find(
+      const sameTypeAddress = user.address.find(
         (address) => address.addressType === req.body.addressType
       );
       if (sameTypeAddress) {
@@ -344,6 +344,7 @@ router.get("/admin-all-users", isAuthenticated, isAdmin("Admin"), catchAsyncErro
       const users = await User.find().sort({
         createdAt: -1,
       });
+
       res.status(201).json({
         success: true,
         users,

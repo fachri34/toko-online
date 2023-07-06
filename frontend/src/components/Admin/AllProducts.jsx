@@ -1,12 +1,8 @@
 import { Button } from "@material-ui/core";
 import { DataGrid } from "@material-ui/data-grid";
 import React, { useEffect } from "react";
-import { AiOutlineDelete, AiOutlineEye } from "react-icons/ai";
-import { useDispatch, useSelector } from "react-redux";
+import {  AiOutlineEye } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { getAllProductsShop } from "../../redux/actions/product";
-import { deleteProduct } from "../../redux/actions/product";
-import Loader from "../Layout/Loader";
 import axios from "axios";
 import { url } from "../../Api";
 import { useState } from "react";
@@ -15,7 +11,8 @@ const AllProducts = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get(`${url}/product/admin-all-products`, {withCredentials: true}).then((res) => {
+    axios.get(`${url}/product/admin-all-products`, {withCredentials: true})
+    .then((res) => {
         setData(res.data.products);
     })
   }, []);
@@ -29,10 +26,16 @@ const AllProducts = () => {
       flex: 1.4,
     },
     {
+      field: "seller",
+      headerName: "Seller",
+      minWidth: 50,
+      flex: 0.6,
+    },
+    {
       field: "price",
       headerName: "Price",
       minWidth: 100,
-      flex: 0.6,
+      flex: 0.5,
     },
     {
       field: "Stock",
@@ -74,14 +77,17 @@ const AllProducts = () => {
 
   data &&
   data.forEach((item) => {
+    console.log(item)
       row.push({
         id: item._id,
         name: item.name,
+        seller: item.shop.name,
         price: "US$ " + item.discountPrice,
         Stock: item.stock,
         sold: item?.sold_out,
       });
     });
+    
 
   return (
     <>

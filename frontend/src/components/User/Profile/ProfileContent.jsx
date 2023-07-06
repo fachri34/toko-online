@@ -78,12 +78,14 @@ const ProfileContent = ({ active }) => {
                 alt=""
               />
               <div className="w-[30px] h-[30px] bg-[#E3E9EE] rounded-full flex items-center justify-center cursor-pointer absolute bottom-[5px] right-[5px]">
-                <AiOutlineCamera />
                 <input
                 type="file"
                 id="image"
                 className="hidden"
                 onChange={handleImage}/>
+                <label htmlFor="image">
+                  <AiOutlineCamera />
+                </label>
               </div>
             </div>
           </div>
@@ -128,9 +130,9 @@ const ProfileContent = ({ active }) => {
               </div>
               <div className="w-full 800px:flex block pb-3">
                 <div className=" w-[100%] 800px:w-[50%]">
-                  <label className="block pb-2">Address 2</label>
+                  <label className="block pb-2">Password</label>
                   <input
-                    type="address"
+                    type="password"
                     className={`${styles.input} !w-[95%]`}
                     required
                     value={password}
@@ -323,7 +325,7 @@ const AllRefundOrders = () => {
       renderCell: (params) => {
         return (
           <>
-            <Link to={`/order/${params.id}`}>
+            <Link to={`/user/order/${params.id}`}>
               <Button>
                 <AiOutlineArrowRight size={20} />
               </Button>
@@ -528,6 +530,7 @@ const Address = () => {
   const [address2, setAddress2] = useState("");
   const [addressType, setAddressType] = useState("");
   const { user } = useSelector((state) => state.user);
+  console.log(user)
   const dispatch = useDispatch();
 
   const addressTypeData = [
@@ -712,6 +715,18 @@ const Address = () => {
           </div>
         </div>
       )}
+      <div className="flex w-full items-center justify-between">
+        <h1 className="text-[25px] font-[600] text-[#000000ba] pb-2">
+          My Addresses
+        </h1>
+        <div
+          className={`${styles.button} !rounded-md`}
+          onClick={() => setOpen(true)}
+        >
+          <span className="text-[#fff]">Add New</span>
+        </div>
+      </div>
+      <br />
       {user &&
         user.addresses.map((item, index) => (
           <div

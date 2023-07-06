@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import { productData } from '../../static/data'
 import Header from '../../components/Layout/Header'
 import styles from '../../styles/styles'
 import { useSelector } from 'react-redux'
@@ -16,13 +15,15 @@ const ProductsPage = () => {
 
     useEffect(() => {
         if (categoryData === null) {
-            const d = productData && productData.sort((a, b) => a.total_sell - b.total_sell)
-            setData(d)
-        } else {
-            const d = allProducts && allProducts.filter((i) => i.category === categoryData)
-            setData(d)
-        }
-    }, [allProducts])
+            const d = allProducts;
+            setData(d);
+          } else {
+            const d =
+            allProducts && allProducts.filter((i) => i.category === categoryData);
+            setData(d);
+          }
+        
+        }, [allProducts]);
     return (
         <>
             {
