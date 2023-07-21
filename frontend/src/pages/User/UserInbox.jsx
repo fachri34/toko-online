@@ -199,7 +199,7 @@ const UserInbox = () => {
   };
   
   useEffect(() => {
-    scrollRef.current?.scrollIntoView({ beahaviour: "smooth" });
+    scrollRef.current?.scrollIntoView({ behaviour: "smooth" });
   }, [messages]);
 
   return (

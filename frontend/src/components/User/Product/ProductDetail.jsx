@@ -16,8 +16,7 @@ const ProductDetail = ({ data }) => {
   const { wishlist } = useSelector((state) => state.wishlist);
   const { cart } = useSelector((state) => state.cart);
   const { user, isAuthenticated } = useSelector((state) => state.user);
-  const { products } = useSelector((state) => state.product);
-  console.log(products)
+  const { products } = useSelector((state) => state.product)
   const [count, setCount] = useState(1);
   const [click, setClick] = useState(false);
   const [select, setSelect] = useState(0);
